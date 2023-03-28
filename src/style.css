@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+*{
+  font-family: 'Inter';
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  background-color: #2F2B54;
+}
+
+.container{
+  height: 100%;
+  width: 90%;
+  display: grid;
+  grid-template: repeat(10, 1fr) / 2fr 1fr ;
+  column-gap: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.LogoContainer{
+  grid-area: 1 / 1 / 3 / 3;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.logo{
+  font-size: 40px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.date{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.roomcontainer{
+  background-color: white;
+  position: relative;
+  border-radius: 18px;
+}
+
+.descriptioncontainer{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.description{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.status{
+  font-size: 10.5px;
+  color: #92959E
+}
+
+.videofeed{
+  height: 150px;
+  width: 150px;
+}
+
+.roomwidget{
+  grid-area: 3 / 1 / 11 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  
+}
+
+.sensorcardcontainer{
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  padding-left: 16px;
+}
+
+.sensorcard{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  border-radius: 12px;
+  flex-direction: column;
+  align-items: flex;
+  background-color: #ADBBB9;
+}
+
+.sensoricon{
+  height: 2fr;
+}
+
+.sensorinfo{
+  height: 2fr;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;  
+}
+
+.sensordescription{
+  height: 1fr;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.videofeed{
+  width: 150px;
+  height: 150px;
+  background-color:aliceblue;
+  border-radius: 12px;
+  margin-right: 16px;
+  margin-top: 8px;
+  margin-left: auto;
+}
+
+
+.triggercontainer{
+  grid-area: 3 / 2 / 10 / 3;
+  border-radius: 23px;
+  background-color: white;
+}
+
+.triggerheading{
+  font-weight: 600;
+  font-size: 24px;
+  padding-left: 8px;
+  padding-top: 16px;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.warning{
+  list-style: none;
+   background: url("./Frame6.svg") left center no-repeat;
+  padding-left: 32px;
+}
+
+.crtical{
+  list-style: none;
+  background :url("./Frame7.svg") left center no-repeat;
+  padding-left: 32px;
+}
+
+
